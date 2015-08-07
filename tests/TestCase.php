@@ -1,4 +1,4 @@
-<?php namespace PVT\Tests\Captcha;
+<?php namespace VoTong\Tests\Captcha;
 
 class TestCase extends \Illuminate\Foundation\Testing\TestCase {
 

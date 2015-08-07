@@ -1,4 +1,6 @@
 # Captcha for Laravel 5
+Clone from https://github.com/mewebstudio/captcha
+Customize for one form one captcha.
 
 [![Build Status](https://scrutinizer-ci.com/g/mewebstudio/captcha/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mewebstudio/captcha/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mewebstudio/captcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mewebstudio/captcha/?branch=master)
 

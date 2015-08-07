@@ -1,4 +1,4 @@
-<?php namespace PVT\Tests\Captcha;
+<?php namespace VoTong\Tests\Captcha;
 
 use TestCase;
 use Mockery;
