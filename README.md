@@ -1,6 +1,11 @@
 # Captcha for Laravel 5
 Clone from https://github.com/mewebstudio/captcha
+
 Customize for one form one captcha.
+
+This version use session to store captcha value so if you use more than one captcha in a page may be has issue overwrite session because more than one request of a session request same time.
+
+Next version will has option to store captcha value to database.
 
 [![Build Status](https://scrutinizer-ci.com/g/mewebstudio/captcha/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mewebstudio/captcha/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mewebstudio/captcha/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mewebstudio/captcha/?branch=master)
 
@@ -21,7 +26,7 @@ project's `composer.json`.
 {
     "require": {
         "laravel/framework": "5.0.*",
-        "mews/captcha": "~2.0"
+        "votong/captcha": "^1.0"
     },
     "minimum-stability": "dev"
 }
@@ -31,7 +36,7 @@ or
 
 Require this package with composer:
 ```
-composer require mews/captcha
+composer require votong/captcha
 ```
 
 Update your packages with ```composer update``` or install with ```composer install```.
@@ -48,14 +53,14 @@ Find the `providers` key in `config/app.php` and register the Captcha Service Pr
 ```php
     'providers' => [
         // ...
-        'Mews\Captcha\CaptchaServiceProvider',
+        'VoTong\Captcha\CaptchaServiceProvider',
     ]
 ```
 for Laravel 5.1+
 ```php
     'providers' => [
         // ...
-        Mews\Captcha\CaptchaServiceProvider::class,
+        VoTong\Captcha\CaptchaServiceProvider::class,
     ]
 ```
 
@@ -64,14 +69,14 @@ Find the `aliases` key in `config/app.php`.
 ```php
     'aliases' => [
         // ...
-        'Captcha' => 'Mews\Captcha\Facades\Captcha',
+        'Captcha' => 'VoTong\Captcha\Facades\Captcha',
     ]
 ```
 for Laravel 5.1+
 ```php
     'aliases' => [
         // ...
-        'Captcha' => Mews\Captcha\Facades\Captcha::class,
+        'Captcha' => VoTong\Captcha\Facades\Captcha::class,
     ]
 ```
 
@@ -168,8 +173,8 @@ Based on [Intervention Image](https://github.com/Intervention/image)
 
 ## Links
 * [Intervention Image](https://github.com/Intervention/image)
-* [L5 Captcha on Github](https://github.com/mewebstudio/captcha)
-* [L5 Captcha on Packagist](https://packagist.org/packages/mews/captcha)
+* [L5 Captcha on Github](https://github.com/votong/captcha)
+* [L5 Captcha on Packagist](https://packagist.org/packages/votong/captcha)
 * [For L4 on Github](https://github.com/mewebstudio/captcha/tree/master-l4)
 * [License](http://www.opensource.org/licenses/mit-license.php)
 * [Laravel website](http://laravel.com)
